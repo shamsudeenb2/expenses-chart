@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Overpass:ital,wght@0,200;0,300;1,100;1,200;1,300&family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: hsl(27, 66%, 92%);
+    width: 100%;
+    height: 100vh;
+}
+main>section{
+  
+}
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(10, 79%, 65%);
+    border-radius: 10px;
+    color: white;
+}
+header>div,img{
+    margin: 10px 15px;
+}
+header>div>p{
+    margin: 6px 0px;
+    font-size: 1.3rem;
+}
+header>div>span{
+    font-size: 0.8rem;
+    color: #f2eeee;
+}
+
+.container{
+    background: white;
+    padding: 20px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.container>h1{
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+.days{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+    margin: 15px 0px;
+    width: 100%;
+    position: relative;
+}
+
+.num-day{
+    text-align: center;
+    width: 10%;
+  }
+.day{
+    background: hsl(10, 79%, 65%);
+    width: 120%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.day>i{
+    position: absolute;
+    top: -22px;
+    left: 1px;
+    background: hsl(25, 47%, 15%);
+    width: 100%;
+    height: 18px;
+    display: none;
+    color: white;
+    font-size: 0.8rem;
+
+}
+.num-day>span{
+    font-size: 0.9rem;
+    color: rgb(119, 116, 116);
+    padding-top: 5px;
+}
+
+.days::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    top: 165px;
+    margin: 10px auto;
+    background: rgb(220, 217, 217);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin-top: 35px;
+}
+.total{
+    margin: 10px 0px ;
+}
+.total>p{
+    margin: 5px;
+    font-size: 13px;
+    color: rgb(119, 116, 116);
+}
+#total-number{
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+}
+#lastmonth span{
+    font-weight: 600;
+    margin-left: 50px;
+}
+#lastmonth p{
+    margin: 0px;
+    font-size: 0.8rem;
+    color: rgb(119, 116, 116);
+}
+#lastmonth{
+    margin-top: 20px;
+}
+.active{
+    background: 'hsl(33, 100%, 98%)';
+}
+
+@media all and (max-width: 850px){
+    main>section{
+        width:60%;
+    }
+    .container>h1{
+        font-size: 1.7rem;
+        margin: 10px auto;
+    }
+    .num-day{
+        text-align: center;
+        width: 150px;
+      }
+    .day{
+        width: 90%;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media all and (max-width: 500px){
+    main>section{
+        width: 90%;
+    }
+    .container>h1{
+        font-size: 1.5rem;
+        margin: 10px auto;
+    }
+    .num-day{
+        text-align: center;
+        width: 150px;
+      }
+    .day{
+        width: 90%;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media all and (max-width: 375px){
+    main>section{
+        width: 95%;
+    }
+    .container>h1{
+        font-size: 1rem;
+        margin: 10px auto;
+    }
+    .num-day{
+        text-align: center;
+        width: 150px;
+      }
+    .day{
+        width: 90%;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+}
